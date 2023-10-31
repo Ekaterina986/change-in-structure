@@ -4,8 +4,8 @@ for (let link of listLink){
         e.preventDefault();
         const toolList = document.getElementsByClassName('tooltip');
         for (let tool of toolList){
-            console.log(222, tool);
             tool.remove();
+            return;
         }
         const linkEl = e.currentTarget;
         const linkPos = linkEl.getBoundingClientRect();
